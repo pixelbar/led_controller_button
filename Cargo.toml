@@ -1,0 +1,17 @@
+[package]
+name = "stm32f103"
+version = "0.1.0"
+authors = ["trangar"]
+
+[dependencies]
+peripherals = { path = "libs/peripherals" }
+cortex-m-semihosting = "0.2.0"
+cortex-m = "0.3.0"
+
+[dependencies.cortex-m-rt]
+features = ["abort-on-panic"]
+version = "0.3.3"
+
+[profile.release]
+debug = true
+lto = true
