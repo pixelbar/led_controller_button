@@ -5,12 +5,11 @@ authors = ["trangar"]
 
 [dependencies]
 peripherals = { path = "libs/peripherals" }
-cortex-m-semihosting = "0.2.0"
-cortex-m = "0.3.0"
+cortex-m-semihosting = "*"
+cortex-m = "*"
 
 [dependencies.cortex-m-rt]
 features = ["abort-on-panic"]
-version = "0.3.3"
 
 [profile.release]
 debug = true
